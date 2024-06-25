@@ -15,3 +15,22 @@ variable "controlplane_memory" {
 variable "controlplane_count" {
   default = 1
 }
+
+variable "controlplane_vm_count" {
+  type    = number
+  default = 1
+}
+
+variable "worker_vm_count" {
+  type    = number
+  default = 1
+}
+
+variable "worker_cpus" {
+  type    = number
+  default = 2
+}
+
+variable "worker_memory" {
+  default = "4 GB"
+}
